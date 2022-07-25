@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\bin\Debug\SingletonDemoFramework.exe.config
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\bin\Debug\SingletonDemoFramework.exe
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\bin\Debug\SingletonDemoFramework.pdb
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\obj\Debug\SingletonDemoFramework.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\obj\Debug\SingletonDemoFramework.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\obj\Debug\SingletonDemoFramework.exe
+C:\Users\Admin\Desktop\Design Patterns in C#\SingletonDemoFramework\obj\Debug\SingletonDemoFramework.pdb

@@ -1,0 +1,94 @@
+Gang of Four categorised design patterns into three :
+
+Creational
+This type deals with the object creation and initialization. this pattern gives
+the program more flexibility in deciding which objects need to be created for a given
+case.
+	eg: Singleton, Factory ,Abstract Factory.. etc ( builder, prototype pattern)
+Structural
+This type deals with class and object composition.
+this pattern focuses on decoupling interface and implementation of classes and its objects.
+	eg: Adapter , Bridge ..etc
+
+
+Behavioural
+This type deals with the communication between classes and objects.
+	eg: chain of responsibility, Command, interpreter.. etc
+	
+	
+
+What is singleton design pattern?
+	- this pattern is used when we need to ensure that only one object of a particular class
+	  need to be created. all further references to the objects are referred to the same underlying instance created.
+	  ClientObj-A ClientObj-B ClientObj-C 
+	     \             |          /
+		  \            |         /
+		   \		   |		/
+		    \	       |       /
+		      SINGLETON OBJECT
+			           |
+					   |
+					   |
+				     Task
+	- Advantages of singleton
+	  * Singleton controls concurrent access to the resource.
+	  * It ensures there is only one object available across the application in a controlled state.
+	- Implementation guidelines
+	  * Ensure that only one instance of the class exists.
+	  * Provide global access to that instance By
+		- Declaring all constructors of the class to be private.
+		- Providing static method that returns a references to the instance.
+		- This instance is stored as a private static variable.
+Singleton as creational Pattern
+	-
+Implementation Guidelines
+	-
+How do we implement a singleton class
+
+namespace SingletonDemoFramework
+{
+    public class SingletonDemo
+    {
+        private static int counter = 0;
+        private static SingletonDemo instance = null;
+
+        public static SingletonDemo GetInstance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new SingletonDemo();
+                return instance;
+            }
+        }
+        private SingletonDemo()
+        {
+            counter++;
+            Console.WriteLine("Counter value "+ counter.ToString() );
+        }
+        public void PrintDetails(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+}
+
+
+ public class SingletonDemo
+    {
+        private static int _counter;
+        private static SingletonDemo _instance;
+
+        public static SingletonDemo GetInstance => _instance ?? (_instance = new SingletonDemo());
+
+        public SingletonDemo()
+        {
+            _counter++;
+            Console.WriteLine("Counter value " + _counter.ToString());
+        }
+        public void PrintDetails(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+}
